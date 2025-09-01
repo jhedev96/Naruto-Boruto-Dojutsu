@@ -27,6 +27,15 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.owner-info {
+    padding-top: 40px;
+}
+
+.owner-info > .text {
+    text-align: left;
+    font-size: 15px;
+}
+
 .container {
     width: 100%;
     text-align: center;
@@ -70,7 +79,7 @@ body::-webkit-scrollbar {
 .rinnegan,
 .rinnegan-tomoe,
 .rinnesharingan,
-.darmagan,
+.kokugan,
 .byakugan,
 .jougan,
 .ketsuryugan,
@@ -123,6 +132,38 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.eye:hover {
+    z-index: 1;
+    box-shadow: 0 0 100px rgb(201, 13, 13);
+    animation: scale .3s ease-in-out, sharingan-glow .5s ease-in-out;
+    animation-direction: alternate;
+    transform: scale(1.1);
+    opacity: 1;
+    mix-blend-mode: lighten;
+}
+
+.eye:hover .inner-eye {
+    animation: rotation 2.5s ease-in-out .8s;
+}
+
+.eye-and-reflection-container {
+    height: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.eye-and-reflection-container:hover {
+    height: 400px;
+    padding: 40px;
+    -webkit-box-reflect: below -365px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+}
+
+.eye:active {
+    box-shadow: none;
+    animation: none;
+    transform: scale(1);
+    opacity: 1
 }
 
 .tag-container {
@@ -196,48 +237,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(225deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5046393557422969) 45%, rgba(0, 0, 0, 0) 100%);
 }
 
-.eye:hover {
-    z-index: 1;
-    box-shadow: 0 0 100px rgb(201, 13, 13);
-    animation: scale .3s ease-in-out, glow .5s ease-in-out;
-    animation-direction: alternate;
-    transform: scale(1.1);
-    opacity: 1;
-    mix-blend-mode: lighten;
-}
-
-.eye:hover .inner-eye {
-    animation: rotation 2.5s ease-in-out .8s;
-}
-
-.eye-and-reflection-container {
-    height: 300px;
-    transition: all 0.3s ease-in-out;
-}
-
-.eye-and-reflection-container:hover {
-    height: 400px;
-    padding: 40px;
-    -webkit-box-reflect: below -365px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
-}
-
-.eye:active {
-    box-shadow: none;
-    animation: none;
-    transform: scale(1);
-    opacity: 1
-}
-
-.owner-info {
-    padding-top: 40px;
-}
-
-.owner-info > .text {
-    text-align: left;
-    font-size: 15px;
-}
-
-@keyframes glow {
+@keyframes sharingan-glow {
     0% {
         box-shadow: 0 0 0 rgb(201, 13, 13);
     }
@@ -923,7 +923,7 @@ body::-webkit-scrollbar {
 }
 
 .blue:hover {
-    box-shadow: 0 0 100px rgb(52, 39, 172);
+    box-shadow: 0 0 100px rgb(48, 39, 172);
     animation: urashiki-glow-blue .5s ease-in-out;
 }
 
@@ -964,11 +964,11 @@ body::-webkit-scrollbar {
 
 @keyframes urashiki-glow-blue {
     0% {
-        box-shadow: 0 0 0 rgb(48, 11, 255);
+        box-shadow: 0 0 0 rgb(48, 39, 172);
     }
 
     100% {
-        box-shadow: 0 0 100px rgb(15, 11, 255);
+        box-shadow: 0 0 100px rgb(48, 39, 172);
     }
 }
 
@@ -1511,8 +1511,13 @@ body::-webkit-scrollbar {
 /* SARADA EYES END */
 
 /* ISSHIKI EYES START */
-.darma-eye {
+.koku-eye {
     background: radial-gradient(circle, #f4f768 0%, #a17c1f 60%);
+}
+
+.koku-eye:hover {
+    box-shadow: 0 0 100px #a17c1f;
+    animation: koku-glow .5s ease-in-out;
 }
 
 .isshiki-eye::after {
@@ -1571,11 +1576,26 @@ body::-webkit-scrollbar {
     transform: rotate(90deg);
 }
 
+@keyframes koku-glow {
+    0% {
+        box-shadow: 0 0 0 #a17c1f;
+    }
+
+    100% {
+        box-shadow: 0 0 100px #a17c1f;
+    }
+}
+
 /* ISSHIKI EYES END */
 
 /* BYAKUGAN EYES START */
 .hyuga-eye {
     background: radial-gradient(circle, #fafaff 0%, #e2dffb 60%);
+}
+
+.hyuga-eye:hover {
+    box-shadow: 0 0 100px #e2dffb;
+    animation: hyuga-glow .5s ease-in-out;
 }
 
 .byakugan-eye::after {
@@ -1634,11 +1654,41 @@ body::-webkit-scrollbar {
     background: radial-gradient(circle, rgba(255, 224, 11, 1) 0%, rgba(190, 177, 74, 1) 60%, rgba(223, 222, 163, 1) 100%);
 }
 
+.momoshiki-gold-eye:hover {
+    box-shadow: 0 0 100px rgba(190, 177, 74, 1);
+    animation: momoshiki-gold-glow .5s ease-in-out;
+}
+
+@keyframes hyuga-glow {
+    0% {
+        box-shadow: 0 0 0 #e2dffb;
+    }
+
+    100% {
+        box-shadow: 0 0 100px #e2dffb;
+    }
+}
+
+@keyframes momoshiki-gold-glow {
+    0% {
+        box-shadow: 0 0 0 rgba(190, 177, 74, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgba(190, 177, 74, 1);
+    }
+}
+
 /* BYAKUGAN EYES END */
 
 /* JOUGAN EYES START (WIP) */
 .boruto-eye {
-    background: radial-gradient(circle at center, #42616b 0%, #b3e5f5 50%);
+    background: radial-gradient(circle at center, rgba(66,97,107,1.0) 0%, rgba(179,229,245,1.0) 50%);
+}
+
+.boruto-eye:hover {
+    box-shadow: 0 0 100px rgba(179,229,245, 1);
+    animation: boruto-glow .5s ease-in-out;
 }
 
 .jougan-eye::after {
@@ -1662,12 +1712,12 @@ body::-webkit-scrollbar {
     height: 45px;
     z-index: 5;
     border-radius: 50%;
-    background-color: #bad5de;
+    background-color: rgba(186,213,222,1.0);
     top: 50%;
     left: 50%;
     box-shadow:
-        inset 0 0 6px 3px #a4c5cd,
-        0 0 12px 8px #a4c5cd;
+        inset 0 0 6px 3px rgba(164,197,205,1.0),
+        0 0 12px 8px rgba(164,197,205,1.0);
     transform: translate(-50%, -50%);
 }
 
@@ -1677,14 +1727,24 @@ body::-webkit-scrollbar {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 3px solid #42616b;
+    border: 3px solid rgba(66,97,107,1.0);
     top: 50%;
     left: 50%;
-    background: #cdecf7;
+    background: rgba(205,236,247,1.0);
     box-shadow:
-        inset 0 0 6px 3px #a4c5cd,
-        0 0 12px 8px #a4c5cd;
+        inset 0 0 6px 3px rgba(164,197,205,1.0),
+        0 0 12px 8px rgba(164,197,205,1.0);
     transform: translate(-50%, -50%);
+}
+
+@keyframes boruto-glow {
+    0% {
+        box-shadow: 0 0 0 rgba(179,229,245, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgba(179,229,245, 1);
+    }
 }
 
 /* JOUGAN V2 (WIP) */
@@ -1750,6 +1810,11 @@ body::-webkit-scrollbar {
     background: radial-gradient(circle, #cc757b 0%, #6a1517 80%);
 }
 
+.chino-eye:hover {
+    box-shadow: 0 0 100px #cc757b;
+    animation: chino-glow .5s ease-in-out;
+}
+
 .ketsuryugan-eye::after {
     width: 40px;
     height: 40x;
@@ -1784,6 +1849,16 @@ body::-webkit-scrollbar {
     border-radius: 15px;
     background-color: #bc76f3;
     box-shadow: 0 0 12px 2px #bc76f3;
+}
+
+@keyframes chino-glow {
+    0% {
+        box-shadow: 0 0 0 #cc757b;
+    }
+
+    100% {
+        box-shadow: 0 0 100px #cc757b;
+    }
 }
 
 /* KETSURYUGAN EYES END */
@@ -1959,6 +2034,11 @@ body::-webkit-scrollbar {
     background: radial-gradient(circle at center, #fccc1c 0%, #eb8621 45%);
 }
 
+.naruto-ntsm-eye:hover {
+    box-shadow: 0 0 100px #eb8621;
+    animation: naruto-ntsm-glow .5s ease-in-out;
+}
+
 .sagemode-nt-eye::after {
     width: 40px;
     height: 40x;
@@ -1996,11 +2076,26 @@ body::-webkit-scrollbar {
     background-color: #1a1a1a;
 }
 
+@keyframes naruto-ntsm-glow {
+    0% {
+        box-shadow: 0 0 0 #eb8621;
+    }
+
+    100% {
+        box-shadow: 0 0 100px #eb8621;
+    }
+}
+
 /* NARUTO NINE TAILS SAGE MODE EYES END */
 
 /* NARUTO SAGE MODE EYES START */
 .naruto-sm-eye {
     background: radial-gradient(circle at center, #ffe100 0%, #ffbb00 55%);
+}
+
+.naruto-sm-eye:hover {
+    box-shadow: 0 0 100px #ffbb00;
+    animation: naruto-sm-glow .5s ease-in-out;
 }
 
 .sagemode-eye::after {
@@ -2028,11 +2123,26 @@ body::-webkit-scrollbar {
     background-color: #1a1a1a;
 }
 
+@keyframes naruto-sm-glow {
+    0% {
+        box-shadow: 0 0 0 #ffbb00;
+    }
+
+    100% {
+        box-shadow: 0 0 100px #ffbb00;
+    }
+}
+
 /* NARUTO SAGE MODE EYES END */
 
 /* NARUTO SAGE MODE V2 EYES START */
 .naruto-sm2-eye {
     background: radial-gradient(circle, rgba(238, 213, 96, 1) 0%, rgba(214, 168, 29, 1) 35%, rgba(255, 154, 0, 1) 100%);
+}
+
+.naruto-sm2-eye:hover {
+    box-shadow: 0 0 100px rgba(238, 213, 96, 1);
+    animation: naruto-sm2-glow .5s ease-in-out;
 }
 
 .sagemode-v2-eye::after {
@@ -2072,6 +2182,16 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     transform: translate(-50%, -50%) rotate(50deg);
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='black' stroke-width='9' stroke-dasharray='2%2c 10%2c 2%2c 30' stroke-dashoffset='25' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+
+@keyframes naruto-sm2-glow {
+    0% {
+        box-shadow: 0 0 0 rgba(238, 213, 96, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgba(238, 213, 96, 1);
+    }
 }
 
 /* NARUTO SAGE MODE V2 EYES END */
