@@ -82,7 +82,9 @@ body::-webkit-scrollbar {
 .kokugan,
 .byakugan,
 .jougan,
+.tenseigan,
 .ketsuryugan,
+.shukkaku,
 .naruto-sagemode {
     display: flex;
     align-items: center;
@@ -281,7 +283,6 @@ body::-webkit-scrollbar {
 .inactive-eye {
     background-color: black;
 }
-
 /* INACTIVE EYE END */
 
 /* SHARINGAN EYE START */
@@ -291,14 +292,12 @@ body::-webkit-scrollbar {
 .rinnesharingan-eye {
     background: var(--eye-background-radial);
 }
-
 /* SHARINGAN EYE END */
 
 /*  LEVEL2 EYE START */
 .level2 > .inner-eye > .tag-container:nth-child(2) {
     transform: rotate(180deg);
 }
-
 /*  LEVEL2 EYE END */
 
 /*  LEVEL3 EYE START */
@@ -309,7 +308,6 @@ body::-webkit-scrollbar {
 .level3 > .inner-eye > .tag-container:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /*  LEVEL3 EYE END */
 
 /* NANASHI EYES START */
@@ -363,7 +361,6 @@ body::-webkit-scrollbar {
 .nanashi-eye > .inner-eye > .semicircle:nth-child(4) {
     transform: rotate(200deg);
 }
-
 /* NANASHI EYES END */
 
 /* BARU EYES START */
@@ -421,7 +418,6 @@ body::-webkit-scrollbar {
 .semicircle:nth-child(4) {
     transform: rotate(240deg);
 }
-
 /* BARU EYES END */
 
 /* FUGAKU EYES START */
@@ -487,7 +483,6 @@ body::-webkit-scrollbar {
     left: 80px;
     transform: rotate(35deg);
 }
-
 /* FUGAKU EYES END */
 
 /* HAGOROMO EYES START */
@@ -544,7 +539,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px rgba(122, 83, 156, 1);
     }
 }
-
 /* HAGOROMO EYES END */
 
 /* INDRA EYES START */
@@ -572,7 +566,6 @@ body::-webkit-scrollbar {
     stroke-width: 2px;
     fill: none;
 }
-
 /* INDRA EYES END */
 
 /* ITACHI EYE START */
@@ -622,7 +615,6 @@ body::-webkit-scrollbar {
 .itachi-eye > .inner-eye > .tag-container:nth-child(3) {
     transform: rotate(210deg);
 }
-
 /* ITACHI EYE END */
 
 /* IZUNA EYES START */
@@ -664,7 +656,6 @@ body::-webkit-scrollbar {
 .izuna-eye > .inner-eye > .tag-container:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /* IZUNA EYES END */
 
 /* OBITO EYES START */
@@ -749,7 +740,6 @@ body::-webkit-scrollbar {
 .obito-eye > .inner-eye > .tag-container:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /* OBITO EYES END */
 
 /* MADARA EYEY START */
@@ -833,7 +823,6 @@ body::-webkit-scrollbar {
     transform: rotate(45deg);
     background-color: black;
 }
-
 /* MADARA EYEY END */
 
 /* MOMOSHIKI EYE START */
@@ -914,7 +903,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px rgba(172, 39, 39, 1);
     }
 }
-
 /* MOMOSHIKI EYE END */
 
 /* URASHIKI EYE START */
@@ -971,7 +959,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px rgb(48, 39, 172);
     }
 }
-
 /* URASHIKI EYE END */
 
 /* NAKA EYES START */
@@ -1035,7 +1022,6 @@ body::-webkit-scrollbar {
 .naka-eye > .inner-eye > .tag-container:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /* NAKA EYES END */
 
 /* NAORI EYES START */
@@ -1088,7 +1074,6 @@ body::-webkit-scrollbar {
 .naori-eye > .inner-eye > .tag:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /* NAORI EYES END */
 
 /* RAI EYES START */
@@ -1141,7 +1126,6 @@ body::-webkit-scrollbar {
 .rai-eye > .inner-eye > .tag:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /* RAI EYES END */
 
 /* SASUKE EYES START */
@@ -1277,14 +1261,12 @@ body::-webkit-scrollbar {
 .s-rgn > .inner-eye > div > .tag-container:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /* SASUKE EYES END */
 
 /* SHADOW EYES START */
 .shadow {
     -webkit-box-reflect: below -365px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
 }
-
 /* SHADOW EYES END */
 
 /* SHIN EYES START */
@@ -1327,7 +1309,6 @@ body::-webkit-scrollbar {
 .shin-eye > .inner-eye > .tag-container:nth-child(3) {
     transform: rotate(240deg);
 }
-
 /* SHIN EYES END */
 
 /* SHISUI EYES START */
@@ -1397,7 +1378,6 @@ body::-webkit-scrollbar {
         transform: rotate(675deg);
     }
 }
-
 /* SHISUI EYES END */
 
 /* SARADA EYES START */
@@ -1507,7 +1487,6 @@ body::-webkit-scrollbar {
     border-right: 20px solid transparent;
     border-top: 30px solid transparent;
 }
-
 /* SARADA EYES END */
 
 /* ISSHIKI EYES START */
@@ -1585,7 +1564,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px #a17c1f;
     }
 }
-
 /* ISSHIKI EYES END */
 
 /* KAWAKI EYES START (wip) */
@@ -1687,7 +1665,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px #231a02;
     }
 }
-
 /* KAWAKI EYES END */
 
 /* BYAKUGAN EYES START */
@@ -1780,7 +1757,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px rgba(190, 177, 74, 1);
     }
 }
-
 /* BYAKUGAN EYES END */
 
 /* JOUGAN EYES START (WIP) */
@@ -1853,7 +1829,8 @@ body::-webkit-scrollbar {
 .boruto-v2-eye {
     width: 200px;
     height: 200px;
-    border-radius: 50% transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
     background: rgb(136, 136, 136);
     background: radial-gradient(circle, rgba(136, 136, 136, 1) 0%, rgba(78, 73, 83, 1) 100%);
 }
@@ -1904,8 +1881,92 @@ body::-webkit-scrollbar {
         0 0 12px 8px #a4c5cd;
     transform: translate(-50%, -50%);
 }
-
 /* JOUGAN V2 EYES END */
+
+/* TENSEIGAN EYES START (WIP) */
+.toneri-eye {
+    background: radial-gradient(circle at center, rgb(0, 41, 87) 0%, rgb(93, 175, 234) 50%);
+}
+
+.toneri-eye:hover {
+    box-shadow: 0 0 100px rgba(93, 175, 234, 1);
+    animation: toneri-glow .5s ease-in-out;
+}
+
+.tenseigan-svg {
+    width: 332px;
+    height: 322px;
+    position: absolute;
+    top: 36px;
+    z-index: 0;
+    left: 0;
+    height: 145px;
+    transform: rotate(172deg);
+}
+
+.tenseigan-eye::after {
+    width: 40px;
+    height: 40x;
+    background: transparent;
+}
+
+.tenseigan-eye > .inner-eye {
+    width: 150px;
+    height: 150px;
+    border: none;
+    position: relative;
+    border-radius: 50%;
+}
+
+.tenseigan-eye > .inner-eye::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: rgb(16, 97, 124);
+    top: 50%;
+    left: 50%;
+    box-shadow:
+        inset 0 0 6px 3px rgb(26, 108, 129),
+        0 0 12px 8px rgb(198, 244, 255);
+    transform: translate(-50%, -50%);
+}
+
+.tenseigan-eye > .inner-eye::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid rgba(66,97,107,1.0);
+    top: 50%;
+    left: 50%;
+    background: rgba(205,236,247,1.0);
+    box-shadow:
+        inset 0 0 6px 3px rgba(164,197,205,1.0),
+        0 0 12px 8px rgba(164,197,205,1.0);
+    transform: translate(-50%, -50%);
+}
+
+.tenseigan-eye > .inner-eye > .semicircle {
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    transform: rotate(-40deg);
+}
+
+@keyframes toneri-glow {
+    0% {
+        box-shadow: 0 0 0 rgba(93, 175, 234, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgba(93, 175, 234, 1);
+    }
+}
+/* TENSEIGAN EYES END */
 
 /* KETSURYUGAN EYES START */
 .chino-eye {
@@ -1962,7 +2023,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px #cc757b;
     }
 }
-
 /* KETSURYUGAN EYES END */
 
 /* KAGUYA EYE START */
@@ -2051,7 +2111,6 @@ body::-webkit-scrollbar {
 .kaguya-eye > .inner-eye > div > .tag-container:nth-child(5) {
     transform: rotate(240deg);
 }
-
 /* KAGUYA EYES END */
 
 /* KYUUBI EYES START */
@@ -2084,7 +2143,6 @@ body::-webkit-scrollbar {
     border-radius: 200%;
     transform: rotate(90deg);
 }
-
 /* KYUUBI EYES END */
 
 /* NARUTO NINE TAILS SAGE MODE FOX EYES START */
@@ -2128,7 +2186,6 @@ body::-webkit-scrollbar {
     border-radius: 25px;
     background-color: #1a1a1a;
 }
-
 /* NARUTO NINE TAILS SAGE MODE FOX EYES END */
 
 /* NARUTO NINE TAILS SAGE MODE EYES START */
@@ -2187,7 +2244,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px #eb8621;
     }
 }
-
 /* NARUTO NINE TAILS SAGE MODE EYES END */
 
 /* NARUTO SAGE MODE EYES START */
@@ -2234,7 +2290,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px #ffbb00;
     }
 }
-
 /* NARUTO SAGE MODE EYES END */
 
 /* NARUTO SAGE MODE V2 EYES START */
@@ -2295,5 +2350,66 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 100px rgba(238, 213, 96, 1);
     }
 }
-
 /* NARUTO SAGE MODE V2 EYES END */
+
+/* SHUKKAKU EYES START (WIP) */
+.ichibi-eye {
+    background: radial-gradient(circle, #978862 0%, #6a5521 80%);
+}
+
+.ichibi-eye:hover {
+    box-shadow: 0 0 100px #978862;
+    animation: ichibi-glow .5s ease-in-out;
+}
+
+.ichibi-eye::after {
+    width: 200px;
+    height: 200px;
+	border-width: 10px;
+}
+
+.ichibi-circle {
+	display: flex;
+	margin: auto;
+	position: relative;
+	border-radius: 50%;
+
+	width: 85%;
+	height: 85%;
+	border: 3px dotted #000;
+}
+
+.ichibi-iris {
+	position: relative;
+    width: 200px;
+	height: 200px;
+	border-style: solid;
+	border-color: #000;
+}
+
+.ichibi-pupil {
+	position: relative;
+	width: 86%;
+	height: 86%;
+	background:
+		radial-gradient(10px circle at 20% 20% , #716F6B 50%, transparent 50%),
+		radial-gradient(145px circle at left top , #C7BA82 50%, transparent 50%),
+		radial-gradient(10px circle at 80% 20% , #716F6B 50%, transparent 50%),
+		radial-gradient(145px circle at right top , #C7BA82 50%, transparent 50%),
+		radial-gradient(10px circle at 80% 80% , #716F6B 50%, transparent 50%),
+		radial-gradient(145px circle at right bottom , #C7BA82 50%, transparent 50%),
+		radial-gradient(10px circle at 20% 80% , #716F6B 50%, transparent 50%),
+		radial-gradient(145px circle at left bottom , #C7BA82 50%, transparent 50%),
+		#464541;
+}
+
+@keyframes ichibi-glow {
+    0% {
+        box-shadow: 0 0 0 #978862;
+    }
+
+    100% {
+        box-shadow: 0 0 100px #978862;
+    }
+}
+/* SHUKKAKU EYES END */
