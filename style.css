@@ -1594,12 +1594,13 @@ body::-webkit-scrollbar {
 .kawaki-eye > .inner-eye::after {
     content: '';
     position: absolute;
-    top: 15%;
-    left: 15%;
-    width: 100px;
-    height: 100px;
+    top: 23%;
+    left: 23%;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
-    background: radial-gradient(circle, #f4f6f7 0%, #242322 65%);
+    border: 4px solid #fb4e0f;
+    background: radial-gradient(circle, hsl(54, 100%, 50%) 40%, hsl(12, 94%, 31%) 65%);
     filter: blur(10px);
     box-shadow: 0 0 42px 6px #33302e;
 }
@@ -1614,48 +1615,63 @@ body::-webkit-scrollbar {
 .kawaki-eye > .inner-eye > .tag-container > .triangle {
     content: '';
     position: absolute;
-    height: 303px;
-    width: 25px;
-    background-color: #a17c1f;
+    z-index: 5;
+    --bg-color: #a17c1f;
 
+    width: 0;
+    height: 0;
     margin: auto;
+    top: 50px;
+    left: 55px;
+
+    background-color: transparent;
+    border: 100px solid var(--bg-color);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid transparent;
 }
 
 .kawaki-eye > .inner-eye > .tag-container:nth-child(1) {
-    transform: rotate(55.25deg);
+    z-index: 5;
+    transform: rotate(55.7deg);
 }
 
 .kawaki-eye > .inner-eye > .tag-container:nth-child(2) {
-    transform: rotate(-85.5deg);
+    z-index: 5;
+    transform: rotate(-95.5deg);
 }
 
 .kawaki-eye > .inner-eye > .tag-container:nth-child(3) {
-    transform: rotate(-80.52deg);
+    z-index: 5;
+    transform: rotate(120.36deg);
 }
 
 .kawaki-eye > .inner-eye > .tag-container:nth-child(4) {
-    transform: rotate(-140deg);
+    z-index: 5;
+    transform: rotate(-130deg);
 }
 
-.kawaki-eye > .inner-eye > .tag-container:nth-child(5) {
-    transform: rotate(-150deg);
+.kawaki-eye > .inner-eye > .tag-container:nth-child(1) > .triangle {
+    border-right-width: 32.5px;
+    border-bottom-width: 100px;
+    transform: translateY(3%);
 }
 
-.kawaki-eye > .inner-eye > .tag-container:nth-child(6) {
-    transform: rotate(59.2deg);
+.kawaki-eye > .inner-eye > .tag-container:nth-child(2) > .triangle {
+    border-right-width: 20px;
+    border-bottom-width: 100px;
+    transform: translateY(6%);
 }
 
-.kawaki-eye > .inner-eye > .tag-container +:nth-child(2) .triangle:nth-child(1) {
-    height: 450px;
-    width: 30px;
-    top: 40px;
+.kawaki-eye > .inner-eye > .tag-container:nth-child(3) > .triangle {
+    border-right-width: 30px;
+    border-bottom-width: 100px;
+    transform: translateY(-3%);
 }
 
-.kawaki-eye > .inner-eye > .tag-container > .triangle:nth-child(1) {
-    height: 450px;
-    width: 30px;
-    top: 40px;
-};
+.kawaki-eye > .inner-eye > .tag-container:nth-child(4) > .triangle {
+    border-right-width: 35px;
+}
 
 @keyframes koku-cyborg-glow {
     0% {
