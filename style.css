@@ -12,7 +12,7 @@
 body {
     margin: 0;
     background: var(--body-background);
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -87,6 +87,7 @@ body::-webkit-scrollbar {
 .ketsuryugan,
 .shukkaku,
 .yome-dojutsu,
+.ranmaru-dojutsu,
 .naruto-sagemode {
     display: flex;
     align-items: center;
@@ -2513,6 +2514,69 @@ body::-webkit-scrollbar {
     }
 }
 /* YOME EYES END */
+
+/* RANMARU EYES START */
+.ranmaru-eye {
+    background: radial-gradient(circle, #cc757b 0%, rgba(0, 0, 0, 0.5) 80%);
+}
+
+.ranmaru-eye:hover {
+    box-shadow: 0 0 100px rgba(172, 39, 39, 1);
+    filter: contrast(1.1) brightness(1.19);
+    animation: ranmaru-glow .5s ease-in-out;
+}
+
+.ranmaru-dojutsu-eye::after {
+    width: 40px;
+    height: 40x;
+    background: transparent;
+}
+
+.ranmaru-dojutsu-eye > .inner-eye {
+    width: 140px;
+    height: 140px;
+    border: none;
+    position: relative;
+    border-radius: 50%;
+    filter: contrast(1.9) brightness(1.95);
+}
+
+.ranmaru-dojutsu-eye > .inner-eye::after {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: rgba(172, 39, 39, 1);
+    filter: blur(8px);
+    box-shadow: 0 0 19px 9px rgba(172, 39, 39, 1);
+}
+
+.ranmaru-dojutsu-eye > .inner-eye > .tag-container > div {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.99);
+    filter: blur(25px);
+    box-shadow: 0 0 28px 14px #1a1a1a;
+}
+
+@keyframes ranmaru-glow {
+    0% {
+        box-shadow: 0 0 0 rgba(172, 39, 39, 1);
+        filter: contrast(1.1) brightness(1.1);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgba(172, 39, 39, 1);
+        filter: contrast(1.5) brightness(1.5);
+    }
+}
+/* RANMARU EYES END */
 
 /* SHUKKAKU EYES START (WIP) */
 .ichibi-eye {

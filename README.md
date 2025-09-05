@@ -11,10 +11,10 @@ Dojutsu (Kekkai Genkai) that exists in the Naruto and Boruto universe, made only
 - - ✔️ Naruto Sage Mode
 - - ✔️ Nine Tails Sage Mode
 - - ✔️ Nine Tails Sage Mode Fox
-- ☑️ **Ichibi eyes** 🆕 (wip)
+- ☑️ **Ichibi eyes** (wip)
 - ✅ **Ketsuryugan**
-- ✅ **Yome Dojutsu** 🆕 💯
-- 😮‍💨 **Ranmaru Dojutsu**
+- ✅ **Yome Dojutsu** 🆕
+- ✅ **Ranmaru Dojutsu** 🆕 💯
 - 😮‍💨 **Shion Dojutsu**
 - ☑️ **Byakugan**
 - - ✔️ Pure Byakugan
@@ -60,6 +60,8 @@ Dojutsu (Kekkai Genkai) that exists in the Naruto and Boruto universe, made only
 - - ✔️ Isshiki
 - - ✔️ Kawaki 🆕
 - ✅ **Jougan**
-- ✅ **Tenseigan** 🆕
-- ✅ **Senrigan** 🆕
+- ✅ **Tenseigan**
+- ✅ **Senrigan**
 - 😮‍💨 **Daemon Dojutsu**
+---
+- 😮‍💨 **Animation variations:** adds a different animation (hover) touches to each type of dojutsu.
