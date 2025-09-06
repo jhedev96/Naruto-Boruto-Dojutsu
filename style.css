@@ -84,10 +84,12 @@ body::-webkit-scrollbar {
 .jougan,
 .tenseigan,
 .senrigan,
+.daemon-dojutsu,
 .ketsuryugan,
 .shukkaku,
 .yome-dojutsu,
 .ranmaru-dojutsu,
+.shion-dojutsu,
 .naruto-sagemode {
     display: flex;
     align-items: center;
@@ -1696,6 +1698,11 @@ body::-webkit-scrollbar {
     animation: hyuga-glow .5s ease-in-out;
 }
 
+.hyuga-byakugan-text {
+    color: #e2dffb;
+    text-shadow: 0 0 10px #e2dffb, 0 0 10px black, 0 0 10px black, 0 0 10px #e2dffb;
+}
+
 .byakugan-eye::after {
     width: 40px;
     height: 40x;
@@ -1757,6 +1764,11 @@ body::-webkit-scrollbar {
     animation: momoshiki-gold-glow .5s ease-in-out;
 }
 
+.momoshiki-gold-byakugan-text {
+    color: rgba(190, 177, 74, 1);
+    text-shadow: 0 0 10px rgba(190, 177, 74, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(190, 177, 74, 1);
+}
+
 @keyframes hyuga-glow {
     0% {
         box-shadow: 0 0 0 #e2dffb;
@@ -1778,6 +1790,68 @@ body::-webkit-scrollbar {
 }
 /* BYAKUGAN EYES END */
 
+/* HIMAWARI BYAKUGAN (WIP) */
+.himawari-eye {
+    background: radial-gradient(circle, rgb(121, 161, 172) 0%, rgb(186, 152, 220) 100%);
+}
+
+.himawari-eye:hover {
+    box-shadow: 0 0 100px rgb(186, 152, 220);
+    animation: himawari-glow .5s ease-in-out;
+}
+
+.himawari-byakugan-text {
+    color: rgba(186, 152, 220, 1);
+    text-shadow: 0 0 10px rgba(186, 152, 220, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(186, 152, 220, 1);
+}
+
+.hima-byakugan > .inner-eye::before {
+    --pupil: calc(250px * .6);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--pupil);
+    height: var(--pupil);
+    border-radius: 50%;
+    /*   border: 4px solid #111; */
+    box-shadow:
+        inset 0 0 6px 3px #df9fef,
+        0 0 12px 8px #baa3ca;
+    background: #e3d6f7;
+    filter: blur(10px);
+    transform: translate(-50%, -50%);
+}
+
+.hima-byakugan > .inner-eye::after {
+    --iris: calc(250px * .23);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: var(--iris);
+    height: var(--iris);
+    border-radius: 50%;
+    background: #cdecf7;
+    box-shadow:
+        inset 0 0 6px 3px #a4c5cd,
+        0 0 12px 8px #a4c5cd;
+    filter: blur(8px) contrast(1.1) brightness(1.1);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes himawari-glow {
+    0% {
+        box-shadow: 0 0 0 rgb(186, 152, 220);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgb(186, 152, 220);
+    }
+}
+/* HIMAWARI BYAKUGAN EYES END */
+
 /* JOUGAN EYES START (WIP) */
 .boruto-eye {
     background: radial-gradient(circle at center, rgba(66,97,107,1.0) 0%, rgba(179,229,245,1.0) 50%);
@@ -1786,6 +1860,11 @@ body::-webkit-scrollbar {
 .boruto-eye:hover {
     box-shadow: 0 0 100px rgba(179,229,245, 1);
     animation: boruto-glow .5s ease-in-out;
+}
+
+.boruto-text {
+    color: rgba(179,229,245, 1);
+    text-shadow: 0 0 10px rgba(179,229,245, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(179,229,245, 1);
 }
 
 .jougan-eye::after {
@@ -1844,64 +1923,6 @@ body::-webkit-scrollbar {
     }
 }
 
-/* JOUGAN V2 (WIP) */
-.boruto-v2-eye {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(136, 136, 136);
-    background: radial-gradient(circle, rgba(136, 136, 136, 1) 0%, rgba(78, 73, 83, 1) 100%);
-}
-
-.jougan-v2-eye::after {
-    width: 40px;
-    height: 40x;
-    background: transparent;
-}
-
-.jougan-v2-eye > .inner-eye {
-    width: 150px;
-    height: 150px;
-    border: none;
-    position: relative;
-    border-radius: 50%;
-}
-
-.jougan-v2-eye > .inner-eye::before {
-    --pupil: calc(250px * .6);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: var(--pupil);
-    height: var(--pupil);
-    border-radius: 50%;
-    /*   border: 4px solid #111; */
-    box-shadow:
-        inset 0 0 6px 3px #a4c5cd,
-        0 0 12px 8px #a4c5cd;
-    background: #e7f4f6;
-    transform: translate(-50%, -50%);
-}
-
-.jougan-v2-eye > .inner-eye::after {
-    --iris: calc(250px * .3);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: var(--iris);
-    height: var(--iris);
-    border-radius: 50%;
-    background: #cdecf7;
-    box-shadow:
-        inset 0 0 6px 3px #a4c5cd,
-        0 0 12px 8px #a4c5cd;
-    transform: translate(-50%, -50%);
-}
-/* JOUGAN V2 EYES END */
-
 /* TENSEIGAN EYES START (WIP) */
 .toneri-eye {
     background: radial-gradient(circle at center, rgb(0, 41, 87) 0%, rgb(93, 175, 234) 50%);
@@ -1910,6 +1931,11 @@ body::-webkit-scrollbar {
 .toneri-eye:hover {
     box-shadow: 0 0 100px rgba(93, 175, 234, 1);
     animation: toneri-glow .5s ease-in-out;
+}
+
+.toneri-text {
+    color: rgba(93, 175, 234, 1);
+    text-shadow: 0 0 10px rgba(93, 175, 234, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(93, 175, 234, 1);
 }
 
 .tenseigan-svg {
@@ -1993,8 +2019,13 @@ body::-webkit-scrollbar {
 }
 
 .eida-eye:hover {
-    box-shadow: 0 0 100px rgba(93, 175, 234, 1);
+    box-shadow: 0 0 100px rgba(0, 48, 171, 1);
     animation: eida-glow .5s ease-in-out;
+}
+
+.eida-text {
+    color: rgba(0, 48, 171, 1);
+    text-shadow: 0 0 10px rgba(0, 48, 171, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(0, 48, 171, 1);
 }
 
 .senrigan-eye > .inner-eye > .tag-container {
@@ -2074,14 +2105,104 @@ body::-webkit-scrollbar {
 
 @keyframes eida-glow {
     0% {
-        box-shadow: 0 0 0 rgba(93, 175, 234, 1);
+        box-shadow: 0 0 0 rgba(0, 48, 171, 1);
     }
 
     100% {
-        box-shadow: 0 0 100px rgba(93, 175, 234, 1);
+        box-shadow: 0 0 100px rgba(0, 48, 171, 1);
     }
 }
 /* SENRIGAN EYES END */
+
+/* DAEMON EYES START */
+.daemon-eye {
+    background: radial-gradient(circle, rgb(20, 17, 21) 0%, rgb(39, 23, 42) 80%);
+}
+
+.daemon-eye:hover {
+    box-shadow: 0 0 100px rgb(90, 31, 100);
+    animation: daemon-glow .5s ease-in-out;
+}
+
+.daemon-text {
+    color: rgba(90, 31, 100, 1);
+    text-shadow: 0 0 10px rgba(90, 31, 100, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(90, 31, 100, 1);
+}
+
+.daemon-dojutsu-eye::after {
+    width: 40px;
+    height: 40x;
+    background: transparent;
+}
+
+.daemon-dojutsu-eye > .inner-eye {
+    width: 150px;
+    height: 150px;
+    border: none;
+    position: relative;
+    border-radius: 50%;
+}
+
+.daemon-dojutsu-eye > .inner-eye::after {
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    z-index: 1;
+    border-radius: 50%;
+    filter: blur(1px);
+    background-color: oklch(61.417% 0.15432 53.772);
+    box-shadow: 0 0 22px 12px hsl(18, 46%, 63%);
+}
+
+.daemon-dojutsu-eye > .inner-eye > .tag-container > div {
+    content: '';
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: oklch(61.417% 0.15432 53.772);
+    box-shadow: 22px 0 0 0 #1a1a1a;
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+.daemon-dojutsu-eye > .inner-eye > .tag-container > div:nth-child(2) {
+    content: '';
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    z-index: 6;
+    left: 10px;
+    border-radius: 50%;
+    background-color: oklch(61.417% 0.15432 53.772);
+    box-shadow: 22px 0 0 0 #1a1a1a;
+    -webkit-clip-path: path("M60 0 A60 60 0 1 1 60 135 A4 60 0 1 0 60 0 Z");
+    clip-path: path("M60 0 A60 60 0 1 1 60 135 A4 60 0 1 0 60 0 Z");
+}
+
+.daemon-dojutsu-eye > .inner-eye > .tag-container > .shadow {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 135px;
+    z-index: 2;
+    left: 65.75px;
+    filter: blur(10px);
+    background-color: oklch(16.871% 0.01171 60.483);
+}
+
+@keyframes daemon-glow {
+    0% {
+        box-shadow: 0 0 0 rgb(90, 31, 100);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgb(90, 31, 100);
+    }
+}
+/* DAEMON EYES END */
 
 /* KETSURYUGAN EYES START */
 .chino-eye {
@@ -2091,6 +2212,11 @@ body::-webkit-scrollbar {
 .chino-eye:hover {
     box-shadow: 0 0 100px #cc757b;
     animation: chino-glow .5s ease-in-out;
+}
+
+.chino-text {
+    color: #6a1517;
+    text-shadow: 0 0 10px #6a1517, 0 0 10px black, 0 0 10px black, 0 0 10px #6a1517;
 }
 
 .ketsuryugan-eye::after {
@@ -2313,6 +2439,11 @@ body::-webkit-scrollbar {
     animation: naruto-ntsm-glow .5s ease-in-out;
 }
 
+.naruto-ntsm-text {
+    color: #eb8621;
+    text-shadow: 0 0 10px #eb8621, 0 0 10px black, 0 0 10px black, 0 0 10px #eb8621;
+}
+
 .sagemode-nt-eye::after {
     width: 40px;
     height: 40x;
@@ -2369,6 +2500,11 @@ body::-webkit-scrollbar {
 .naruto-sm-eye:hover {
     box-shadow: 0 0 100px #ffbb00;
     animation: naruto-sm-glow .5s ease-in-out;
+}
+
+.naruto-sm-text {
+    color: #ffbb00;
+    text-shadow: 0 0 10px #ffbb00, 0 0 10px black, 0 0 10px black, 0 0 10px #ffbb00;
 }
 
 .sagemode-eye::after {
@@ -2477,6 +2613,11 @@ body::-webkit-scrollbar {
     animation: yome-glow .5s ease-in-out;
 }
 
+.yome-text {
+    color: #ef590f;
+    text-shadow: 0 0 10px #ef590f, 0 0 10px black, 0 0 10px black, 0 0 10px #ef590f;
+}
+
 .yome-dojutsu-eye::after {
     width: 40px;
     height: 40x;
@@ -2524,6 +2665,11 @@ body::-webkit-scrollbar {
     box-shadow: 0 0 100px rgba(172, 39, 39, 1);
     filter: contrast(1.1) brightness(1.19);
     animation: ranmaru-glow .5s ease-in-out;
+}
+
+.ranmaru-text {
+    color: rgba(172, 39, 39, 1);
+    text-shadow: 0 0 10px rgba(172, 39, 39, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(172, 39, 39, 1);
 }
 
 .ranmaru-dojutsu-eye::after {
@@ -2578,6 +2724,100 @@ body::-webkit-scrollbar {
 }
 /* RANMARU EYES END */
 
+/* SHION EYES START (WIP) */
+.shion-eye {
+    background: radial-gradient(circle, rgb(34, 1, 36) 0%, rgb(130, 47, 239) 39%, rgb(113, 31, 255) 60%, rgb(34, 1, 36) 100%);
+}
+
+.shion-eye:hover {
+    box-shadow: 0 0 100px rgb(130, 47, 239);
+    animation: shion-glow .5s ease-in-out;
+}
+
+.shion-text {
+    color: rgba(130, 47, 239, 1);
+    text-shadow: 0 0 10px rgba(130, 47, 239, 1), 0 0 10px black, 0 0 10px black, 0 0 10px rgba(130, 47, 239, 1);
+}
+
+.shion-svg {
+    width: 332px;
+    height: 322px;
+    position: absolute;
+    top: 36px;
+    z-index: 0;
+    left: 0;
+    height: 145px;
+    transform: rotate(172deg);
+}
+
+.shion-dojutsu-eye::after {
+    width: 40px;
+    height: 40x;
+    background: transparent;
+}
+
+.shion-dojutsu-eye > .inner-eye {
+    width: 150px;
+    height: 150px;
+    border: none;
+    position: relative;
+    border-radius: 50%;
+}
+
+.shion-dojutsu-eye > .inner-eye::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    z-index: 0;
+    border-radius: 50%;
+    filter: blur(10px);
+    background-color: rgb(134, 102, 250);
+    top: 50%;
+    left: 50%;
+    box-shadow:
+        inset 0 0 16px 13px rgba(189, 108, 201, 0.541),
+        0 0 32px 18px rgb(131, 110, 218);
+    transform: translate(-50%, -50%);
+}
+
+.shion-dojutsu-eye > .inner-eye::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    z-index: 0;
+    border-radius: 50%;
+    /* border: 3px solid rgb(227, 136, 248); */
+    top: 50%;
+    left: 50%;
+    filter: blur(10px);
+    background: rgb(143, 101, 233);
+    box-shadow:
+        inset 0 0 6px 3px rgb(111, 103, 197),
+        0 0 12px 8px rgb(131, 113, 212);
+    transform: translate(-50%, -50%);
+}
+
+.shion-dojutsu-eye > .inner-eye > .semicircle {
+    position: absolute;;
+    z-index: 1;
+    width: 215px;
+    height: 215px;
+    transform: rotate(-40deg);
+}
+
+@keyframes shion-glow {
+    0% {
+        box-shadow: 0 0 0 rgb(130, 47, 239);
+    }
+
+    100% {
+        box-shadow: 0 0 100px rgb(130, 47, 239);
+    }
+}
+/* SHION EYES END */
+
 /* SHUKKAKU EYES START (WIP) */
 .ichibi-eye {
     background: radial-gradient(circle, #978862 0%, #6a5521 80%);
@@ -2586,6 +2826,11 @@ body::-webkit-scrollbar {
 .ichibi-eye:hover {
     box-shadow: 0 0 100px #978862;
     animation: ichibi-glow .5s ease-in-out;
+}
+
+.ichibi-text {
+    color: #978862;
+    text-shadow: 0 0 10px #978862, 0 0 10px black, 0 0 10px black, 0 0 10px #978862;
 }
 
 .ichibi-eye::after {

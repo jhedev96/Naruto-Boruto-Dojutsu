@@ -13,13 +13,16 @@ Dojutsu (Kekkai Genkai) that exists in the Naruto and Boruto universe, made only
 - - ✔️ Nine Tails Sage Mode Fox
 - ☑️ **Ichibi eyes** (wip)
 - ✅ **Ketsuryugan**
-- ✅ **Yome Dojutsu** 🆕
-- ✅ **Ranmaru Dojutsu** 🆕 💯
-- 😮‍💨 **Shion Dojutsu**
-- ☑️ **Byakugan**
+- ✅ **Yome Dojutsu**
+- ✅ **Ranmaru Dojutsu** 🆕
+- ✅ **Shion Dojutsu** 🆕 🔥
+- 😮‍💨 **Kirara Dojutsu**
+- 😮‍💨 **Uncomplete Jiraiya Sage Mode**
+- 😮‍💨 **Orochimaru eyes**
+- ✅ **Byakugan**
 - - ✔️ Pure Byakugan
 - - ✔️ Gold Byakugan (Momoshiki)
-- - ✖️ Himawari Byakugan
+- - ✔️ Himawari Byakugan (wip) 🆕 🔥
 - ☑️ **Sharingan**
 - - ✔️ Basic
 - - ✔️ Tomoe 1
@@ -54,14 +57,14 @@ Dojutsu (Kekkai Genkai) that exists in the Naruto and Boruto universe, made only
 - - **Rinnegan Tomoe**
 - - ✔️ Sasuke
 - - ✔️ Red Rinnegan Tomoe (Urashiki)
-- ✅ **Rinnesharingan** 🔥
+- ✅ **Rinnesharingan** 💯
 - - ✔️ Kaguya/Juubi/Madara
 - ✅ **Kokugan**
 - - ✔️ Isshiki
-- - ✔️ Kawaki 🆕
+- - ✔️ Kawaki
 - ✅ **Jougan**
 - ✅ **Tenseigan**
 - ✅ **Senrigan**
-- 😮‍💨 **Daemon Dojutsu**
+- ✅ **Daemon Dojutsu** 🆕 🔥
 ---
 - 😮‍💨 **Animation variations:** adds a different animation (hover) touches to each type of dojutsu.
